@@ -1,0 +1,134 @@
+@import url(../../../stylesheets/application.css);
+
+body{ color:#303030; background:#e8eaec; }
+
+#top-menu { font-size: 80%; height: 2em; padding-top: 0.5em; background-color: #578bb8; }
+#top-menu a { font-weight: bold; }
+#header { background: #467aa7; height:5.8em; padding: 10px 0 0 0; }
+#header h1 { margin-left: 6px; }
+#quick-search { margin-right: 6px; }
+#main-menu { background-color: #578bb8; left: 0; border-top: 1px solid #fff; width: 100%; }
+#main-menu li { margin: 0; padding: 0; }
+#main-menu li a { background-color: #578bb8; border-right: 1px solid #fff; font-size: 90%; padding: 4px 8px 4px 8px; font-weight: bold; }
+#main-menu li a:hover { background-color: #80b0da; color: #ffffff; }
+#main-menu li a.selected, #main-menu li a.selected:hover { background-color: #80b0da; color: #ffffff; }
+
+#footer { background-color: #578bb8; border: 0; color: #fff;}
+#footer a { color: #fff; font-weight: bold; }
+
+#main { font:90% Verdana,Tahoma,Arial,sans-serif; background: #e8eaec; }
+#main a { font-weight: bold; color: #467aa7; }
+#main a:hover { color: #2a5a8a; text-decoration: underline; }
+#content { background: #fff; }
+#content .tabs ul { bottom:-1px; }
+
+h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 { border-bottom: 0px; color:#606060; font-family: Trebuchet MS,Georgia,"Times New Roman",serif; }
+h2, .wiki h1 { letter-spacing:-1px; }
+h4 { border-bottom: dotted 1px #c0c0c0; }
+
+#top-menu a.home, #top-menu a.my-page, #top-menu a.projects, #top-menu a.administration, #top-menu a.help { 
+    background-position: 0% 40%;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+#top-menu a.home { background-image: url(../images/home.png); }
+#top-menu a.my-page { background-image: url(../../../images/user.png); }
+#top-menu a.projects { background-image: url(../../../images/projects.png); }
+#top-menu a.administration { background-image: url(../images/wrench.png); }
+#top-menu a.help { background-image: url(../../../images/help.png); }
+
+/* makes the fonts that are not links bold black */
+.issue { color: #000000; font-weight: bold; }
+tr, table.list tbody tr:hover { color: #000000; font-weight: bold; }
+
+/* issues links are bold black and underlined */
+#content table.list tr.issue a { font-weight: bold; color: #000000; text-decoration: underline; }
+
+/* colours black the progress bar  */
+#content .list .issue .done_ratio .progress .todo { background: #ffffff; }
+#content .list .issue .done_ratio .progress .closed { background: #000000; }
+
+/* issue view: colour the links bold black and underlined, and the progress bar as in issues list */
+#content .issue h3 { color: #000000; }
+#content .issue a { color: #000000; text-decoration: underline; }
+#content .issue .attributes .progress .progress .todo { background: #ffffff; }
+#content .issue .attributes .progress .progress .closed { background: #000000; }
+
+/* status NEW, priority IMMEDIATE */
+.status-1.priority-5 { background: #fe4040; }
+
+/* status NEW, priority URGENT */
+.status-1.priority-4 { background: #fe6060; }
+
+/* status NEW, priority HIGH */
+.status-1.priority-3 { background: #fe8080; }
+
+/* status NEW, priority NORMAL */
+.status-1.priority-2 { background: #fea0a0; }
+
+/* status NEW, priority LOW */
+.status-1.priority-1 { background: #fec0c0; }
+
+/* status ASSIGNED, priority IMMEDIATE */
+.status-2.priority-5 { background: #5858ff; }
+
+/* status ASSIGNED, priority URGENT */
+.status-2.priority-4 { background: #7878ff; }
+
+/* status ASSIGNED, priority HIGH */
+.status-2.priority-3 { background: #9898ff; }
+
+/* status ASSIGNED, priority NORMAL */
+.status-2.priority-2 { background: #b8b8ff; }
+
+/* status ASSIGNED, priority LOW */
+.status-2.priority-1 { background: #d8d8ff; }
+
+/* status ACKNOWLEDGED, priority IMMEDIATE */
+.status-3.priority-5 { background: #008833 }
+
+/* status ACKNOWLEDGED, priority URGENT */
+.status-3.priority-4 { background: #00aa55; }
+
+/* status ACKNOWLEDGED, priority HIGH */
+.status-3.priority-3 { background: #00cc77; }
+
+/* status ACKNOWLEDGED, priority NORMAL */
+.status-3.priority-2 { background: #00ee99; }
+
+/* status ACKNOWLEDGED, priority LOW */
+.status-3.priority-1 { background: #99ffbb; }
+
+/* status REJECTED, priority IMMEDIATE */
+.status-4.priority-5 { background: #ffbb22; }
+
+/* status REJECTED, priority URGENT */
+.status-4.priority-4 { background: #ffcc44; }
+
+/* status REJECTED, priority HIGH */
+.status-4.priority-3 { background: #ffdd66; }
+
+/* status REJECTED, priority NORMAL */
+.status-4.priority-2 { background: #ffee88; }
+
+/* status REJECTED, priority LOW */
+.status-4.priority-1 { background: #ffffaa; }
+
+/* status CLOSED, priority IMMEDIATE */
+.status-5.priority-5 { background: #555555; }
+
+/* status CLOSED, priority URGENT */
+.status-5.priority-4 { background: #777777; }
+
+/* status CLOSED, priority HIGH */
+.status-5.priority-3 { background: #999999; }
+
+/* status CLOSED, priority NORMAL */
+.status-5.priority-2 { background: #bbbbbb; }
+
+/* status CLOSED, priority LOW */
+.status-5.priority-1 { background: #dddddd; }
+

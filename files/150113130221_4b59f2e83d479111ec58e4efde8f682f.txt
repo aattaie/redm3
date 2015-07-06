@@ -1,0 +1,36 @@
+Install Memcache
+
+Installing memcache takes several steps.
+
+To start, install memcached via apt-get.
+
+----->sudo apt-get install memcached
+
+The next step is to install php-pear, the repository that stores memcache.
+
+------>sudo apt-get install php-pear
+
+If you do not have a compiler on your server, you can download build-essential in order to install memcache:
+
+------>sudo apt-get install build-essential
+
+Finally use PECL (PHP Extension Community Library) to install memcache:
+
+------>sudo pecl install memcache
+
+Say yes by pressing enter during the installation when you are asked if you would like to “Enable memcache session handler support? [yes] :”
+
+Once you have completed the installation of memcache with PECL on the VPS, add memcached to memcache.ini:
+
+------>echo "extension=memcache.so" | sudo tee /etc/php5/conf.d/memcache.ini
+
+Now you are ready to start using Memcache.
+Confirm Memcache and See Stats
+
+After Memcache is downloaded, you can check that it has been installed by searching for it:
+
+ps aux | grep memcache
+
+Additionally, you can see the memcache stats by typing:
+
+------>echo "stats settings" | nc localhost 11211

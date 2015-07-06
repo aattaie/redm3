@@ -1,0 +1,8 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Jackie Twitchett
+N:Twitchett;Jackie;;;
+item1.EMAIL;TYPE=INTERNET:j.twitchett@imperial.ac.uk
+item1.X-ABLabel:EMAIL
+TEL;TYPE=WORK:02075948757
+END:VCARD

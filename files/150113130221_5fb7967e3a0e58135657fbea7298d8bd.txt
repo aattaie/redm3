@@ -1,0 +1,86 @@
+Note '------->' mean steps what I have done
+
+2.3. Installing or upgrading on Debian or Ubuntu
+
+We provide an official Phusion Passenger APT repository. This APT repository contains Phusion Passenger packages for multiple versions of Debian and Ubuntu. These packages are automatically built by our build server after we push out a source release, and thus are always up to date with the official source releases.
+
+If you use these packages to install Phusion Passenger then you do not need to run passenger-install-apache2-module or passenger-install-nginx-module. These packages contain all the binaries that you need.
+
+Packages are available for the x86 and x86_64 architectures. Our policy is to support all Ubuntu LTS releases that are still supported by Canonical, plus the latest Ubuntu release, plus all Debian releases that are still supported by Debian.
+2.3.1. Adding our APT repository
+
+------->Install our PGP key. Packages are signed by "Phusion Automated Software Signing (auto-software-signing@phusion.nl)", fingerprint 1637 8A33 A6EF 1676 2922 526E 561F 9B9C AC40 B2F7.
+
+------->sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 561F9B9CAC40B2F7
+
+------->Add HTTPS support for APT. Our APT repository is stored on an HTTPS server.
+
+------->sudo apt-get install apt-transport-https ca-certificates
+
+------->Create a file /etc/apt/sources.list.d/passenger.list and insert one of the following lines, depending on your distribution.
+
+-------> Open source
+
+        ##### !!!! Only add ONE of these lines, not all of them !!!! #####
+        # Ubuntu 14.04
+        deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main
+        # Ubuntu 12.04
+ -------->deb https://oss-binaries.phusionpassenger.com/apt/passenger precise main
+        # Ubuntu 10.04
+        deb https://oss-binaries.phusionpassenger.com/apt/passenger lucid main
+        # Debian 7
+        deb https://oss-binaries.phusionpassenger.com/apt/passenger wheezy main
+        # Debian 6
+        deb https://oss-binaries.phusionpassenger.com/apt/passenger squeeze main
+
+    Enterprise
+
+        ##### !!!! Only add ONE of these lines, not all of them !!!! #####
+        # Ubuntu 14.04
+        deb https://download:YOUR_DOWNLOAD_TOKEN@www.phusionpassenger.com/enterprise_apt trusty main
+        # Ubuntu 12.04
+        deb https://download:YOUR_DOWNLOAD_TOKEN@www.phusionpassenger.com/enterprise_apt precise main
+        # Ubuntu 10.04
+        deb https://download:YOUR_DOWNLOAD_TOKEN@www.phusionpassenger.com/enterprise_apt lucid main
+        # Debian 7
+        deb https://download:YOUR_DOWNLOAD_TOKEN@www.phusionpassenger.com/enterprise_apt wheezy main
+        # Debian 6
+        deb https://download:YOUR_DOWNLOAD_TOKEN@www.phusionpassenger.com/enterprise_apt squeeze main
+
+        You can find the correct value for YOUR_DOWNLOAD_TOKEN in the Customer Area.
+
+    Secure passenger.list and update your APT cache:
+
+------->sudo chown root: /etc/apt/sources.list.d/passenger.list
+------->sudo chmod 600 /etc/apt/sources.list.d/passenger.list
+------->sudo apt-get update
+
+2.3.2. Installing packages
+
+----> Open source
+
+------->Add our APT repository.
+
+        Install the package:
+
+------->sudo apt-get install libapache2-mod-passenger
+
+------->Enable the Phusion Passenger Apache module and restart Apache:
+------->sudo a2enmod passenger
+------->sudo service apache2 restart
+
+Enterprise
+
+        Download your license key from the Customer Area and save it as /etc/passenger-enterprise-license.
+
+        Add our APT repository.
+
+        Install the packages:
+
+        sudo apt-get install libapache2-mod-passenger-enterprise
+
+        Enable the Phusion Passenger Apache module and restart Apache:
+
+        sudo a2enmod passenger
+        sudo service apache2 restart
+

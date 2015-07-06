@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Ian Ireland
+N:Ireland;Ian;;;
+item1.EMAIL;TYPE=INTERNET:ian@iaiconsult.co.uk
+item1.X-ABLabel:EMAIL
+TEL;TYPE=WORK:01274 567089
+ADR;TYPE=WORK:;;2 Sunnydale Park\nEast Morton;;;BD20 5UF;
+ORG:Ceftor Ltd
+TITLE:Informatics\, Governance & Operations Director
+item2.URL:http\://www.ceftor.com/
+item2.X-ABLabel:URL
+NOTE:@ianireland\nhttps\://www.linkedin.com/pub/ian-ireland/a/182/b6b\n
+END:VCARD

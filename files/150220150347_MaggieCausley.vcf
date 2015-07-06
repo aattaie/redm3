@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Maggie Causley
+N:Causley;Maggie;;;
+item1.EMAIL;TYPE=INTERNET:m.causley@imperial.ac.uk
+item1.X-ABLabel:EMAIL
+TEL;TYPE=WORK:020 7594 8751
+TEL;TYPE=WORK:020 7594 8759
+ADR;TYPE=WORK:;;Room S308\, Sherfield Building\nImperial College London\nEx
+ hibition Road;London;;SW7 2AZ;
+ORG:Imperial College London - Centre for Co-Curricular Studies
+TITLE:Manager of Centre for Co-Curricular Studies
+item2.URL: www.imperial.ac.uk/cocurricularstudies
+item2.X-ABLabel:URL
+NOTE:https\://workspace.imperial.ac.uk/campusinfo/public/sthkencampus.pdf
+END:VCARD

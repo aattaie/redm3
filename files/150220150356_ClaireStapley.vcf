@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Stapley, Claire
+N:Stapley;Claire;;;
+item1.EMAIL;TYPE=INTERNET:c.stapley@imperial.ac.uk
+item1.X-ABLabel:EMAIL
+TEL;TYPE=WORK:020 7594 8751
+TEL;TYPE=WORK:020 7594 8759
+ADR;TYPE=WORK:;;Imperial College London\nExhibition Road;London;;SW7 2AZ;
+ORG:Imperial College London
+END:VCARD

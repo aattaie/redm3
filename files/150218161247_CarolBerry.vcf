@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Carol Berry
+N:Berry;Carol;;;
+item1.EMAIL;TYPE=INTERNET:enquiries@chesterva.org.uk
+item1.X-ABLabel:EMAIL
+item2.EMAIL;TYPE=INTERNET:carol.berry@chesterva.org.uk
+item2.X-ABLabel:EMAIL
+TEL;TYPE=WORK:01244 323527
+TEL;TYPE=WORK:01244 401900
+ADR;TYPE=WORK:;;Folliott House\n53 Northgate Street;Chester;;CH1 2HQ;
+ORG:Chester Voluntary Action
+TITLE:Chief Officer
+item3.URL:www.chesterva.org.uk
+item3.X-ABLabel:URL
+END:VCARD
